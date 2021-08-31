@@ -10,7 +10,7 @@ from xgboost import XGBRegressor
 
 st.write("""
 # 1970's Boston House Price Prediction App
-This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation
+This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation. When considering applying this type of model to your business, consider: What do you want to predict? What explanatory variables (features) are in your data set?
 """)
 
 st.image("US_Boston_US_Header.jpeg")

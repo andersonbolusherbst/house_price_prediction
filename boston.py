@@ -13,7 +13,7 @@ st.write("""
 This app helps you to predict **House Prices**!
 """)
 
-st.image("/Users/fwworner/Desktop/boston/US_Boston_US_Header.jpeg")
+st.image("US_Boston_US_Header.jpeg")
 
 st.write("🏘 Our sophisticated regression models are used to predict continuous values.") 
 st.write("🏘 In this example our model has been employed to predict the price of a house given a variety of features.") 

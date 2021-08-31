@@ -10,7 +10,7 @@ from xgboost import XGBRegressor
 
 st.write("""
 # 1970's Boston House Price Prediction App
-This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation and capital gains
+This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation
 """)
 
 st.image("US_Boston_US_Header.jpeg")
@@ -19,6 +19,7 @@ st.write("🏘 Our sophisticated regression models are used to predict continuou
 st.write("🏘 In this example our model has been employed to predict the price of a house given a variety of features.") 
 st.write("🏘 To properly illustrate this we have made use of the popular Boston House Price dataset")
 st.write("🏘 Use the sliders on the left of the page to predict what your house in Boston may be worth!")
+
 # Loads the Boston House Price Dataset
 boston = datasets.load_boston()
 X = pd.DataFrame(boston.data, columns=boston.feature_names)
@@ -97,7 +98,7 @@ model.fit(X, Y)
 prediction = model.predict(df)
 
 st.header('Prediction of Median House Price of Boston House ($)')
-st.write("1970's house price: "(prediction*1000).round(2))
+st.write("1970's house price: ",(prediction*10000).round(2))
 
 
 # Explaining the model's predictions using SHAP values

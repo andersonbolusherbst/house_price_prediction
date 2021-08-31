@@ -10,8 +10,9 @@ from xgboost import XGBRegressor
 
 st.write("""
 # 1970's Boston House Price Prediction App
-This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation. When considering applying this type of model to your business, consider: What do you want to predict? What explanatory variables (features) are in your data set?
-""")
+This app helps you to predict **House Prices**! Data is from 1970's and adjusted for inflation.""")
+st.write("When considering applying this type of model to your business, consider: What do you want to predict? What explanatory variables (features) are in your data set?")
+
 
 st.image("US_Boston_US_Header.jpeg")
 
@@ -63,7 +64,7 @@ def user_input_features():
     RAD = st.sidebar.slider('RAD', float(X.RAD.min()), float(X.RAD.max()), float(X.RAD.mean()))
     TAX = st.sidebar.slider('TAX', float(X.TAX.min()), float(X.TAX.max()), float(X.TAX.mean()))
     PTRATIO = st.sidebar.slider('PTRATIO', float(X.PTRATIO.min()), float(X.PTRATIO.max()), float(X.PTRATIO.mean()))
-    DIV = st.sidebar.slider('B', float(X.B.min()), float(X.B.max()), float(X.B.mean()))
+    DIV = st.sidebar.slider('DIV', float(X.B.min()), float(X.B.max()), float(X.B.mean()))
     LSTAT = st.sidebar.slider('LSTAT', float(X.LSTAT.min()), float(X.LSTAT.max()), float(X.LSTAT.mean()))
     data = {'CRIM': CRIM,
             'ZN': ZN,

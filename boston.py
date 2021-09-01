@@ -99,7 +99,7 @@ model.fit(X, Y)
 prediction = model.predict(df)
 
 st.header('Prediction of Median House Price of Boston House ($)')
-st.write("1970's house price: ",(prediction*10000).round(2))
+st.write("How much the house cost in the 1970's: ",(prediction*1000).round(2))
 
 
 # Explaining the model's predictions using SHAP values
